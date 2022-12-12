@@ -10,13 +10,13 @@ namespace Project.Common
     {
         public Guid Id { get; set; }
         public string PdfUrl { get; set; }
-        public DateTime ResponseTime { get; set; }
+        public DateTime ResponseDate { get; set; }
         public TranscriptModel TranscriptModel { get; set; }
 
         public PdfCreatorModel()
         {
             Id = Guid.NewGuid();
-            ResponseTime = DateTime.Now;
+            ResponseDate = DateTime.Now;
         }
     }
 }
